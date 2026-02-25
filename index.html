@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layers of Ottawa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nunito Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: #f3e8dc; /* Beige */
+            color: #2b1d14; /* Dark brown/black */
+        }
+
+        /* Background Video */
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(60%);
+        }
+
+        /* Overlay for readability */
+        .overlay {
+            background-color: rgba(243, 232, 220, 0.85);
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px 60px 20px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: #fff8f1;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #5a3e2b; /* Brown */
+        }
+
+        /* Vision Board Grid */
+        .vision-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .vision-board img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            height: 250px;
+        }
+
+        /* Instructions List */
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #5a3e2b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop class="video-background">
+        <source src="ottawa-video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="overlay">
+
+        <!-- Title Section -->
+        <header>
+            <h1>Layers of Ottawa</h1>
+            <p>An Augmented Reality Retelling of the City's History</p>
+        </header>
+
+        <!-- Vision Board Section -->
+        <section>
+            <h2>Vision Board</h2>
+            <div class="vision-board">
+                <img src="image1.jpg" alt="Rideau Canal">
+                <img src="image2.jpg" alt="Parliament Hill">
+                <img src="image3.jpg" alt="Château Laurier">
+                <img src="image4.jpg" alt="Historic Ottawa">
+            </div>
+        </section>
+
+        <!-- Instructions Section -->
+        <section>
+            <h2>How to Experience the AR</h2>
+            <ul>
+                <li>Open Snapchat on your mobile device.</li>
+                <li>Scan the provided historical figure marker image.</li>
+                <li>Allow camera access when prompted.</li>
+                <li>Move your device to explore the AR scene from different angles.</li>
+                <li>Listen to narration and ambient jazz music as the historical moment unfolds.</li>
+                <li>Continue scanning additional markers to explore new time periods.</li>
+            </ul>
+        </section>
+
+        <footer>
+            © 2026 Layers of Ottawa | AR Experience Built in Lens Studio
+        </footer>
+
+    </div>
+
+</body>
+</html>
