@@ -12,11 +12,10 @@
         body {
             margin: 0;
             font-family: 'Nunito', sans-serif;
-            background-color: #f3e8dc; /* Beige */
-            color: #2b1d14; /* Dark brown/black */
+            background-color: #f3e8dc;
+            color: #2b1d14;
         }
 
-        /* Background Video */
         .video-background {
             position: fixed;
             right: 0;
@@ -28,7 +27,6 @@
             filter: brightness(60%);
         }
 
-        /* Overlay for readability */
         .overlay {
             background-color: rgba(243, 232, 220, 0.85);
             padding: 60px 20px;
@@ -42,12 +40,6 @@
         header h1 {
             font-size: 3.5rem;
             font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            font-weight: 300;
         }
 
         section {
@@ -60,12 +52,9 @@
         }
 
         h2 {
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #5a3e2b; /* Brown */
+            color: #5a3e2b;
         }
 
-        /* Vision Board Grid */
         .vision-board {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -75,11 +64,10 @@
         .vision-board img {
             width: 100%;
             border-radius: 10px;
-            object-fit: cover;
             height: 250px;
+            object-fit: cover;
         }
 
-        /* Instructions List */
         ul {
             line-height: 1.8;
         }
@@ -87,56 +75,103 @@
         footer {
             text-align: center;
             padding: 30px;
-            font-size: 0.9rem;
-            color: #5a3e2b;
         }
     </style>
 </head>
 <body>
 
-    <!-- Background Video -->
-    <video autoplay muted loop class="video-background">
-        <source src="ottawa-video.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
+<video autoplay muted loop class="video-background">
+    <source src="ottawa-video.mp4" type="video/mp4">
+</video>
 
-    <div class="overlay">
+<div class="overlay">
 
-        <!-- Title Section -->
-        <header>
-            <h1>Layers of Ottawa</h1>
-            <p>An Augmented Reality Retelling of the City's History</p>
-        </header>
+<header>
+    <h1>Layers of Ottawa</h1>
+    <p>An Augmented Reality Retelling of the City's History</p>
+</header>
 
-        <!-- Vision Board Section -->
-        <section>
-            <h2>Vision Board</h2>
-            <div class="vision-board">
-                <img src="image1.jpg" alt="Rideau Canal">
-                <img src="image2.jpg" alt="Parliament Hill">
-                <img src="image3.jpg" alt="Château Laurier">
-                <img src="image4.jpg" alt="Historic Ottawa">
-            </div>
-        </section>
+<!-- PURPOSE -->
+<section>
+    <h2>Purpose of the Website</h2>
+    <p>
+        This website was created to introduce users to the "Layers of Ottawa" augmented reality experience, by offering a central hub where users can understand the project, explore visuals, and learn how to interact with the AR gallery.
 
-        <!-- Instructions Section -->
-        <section>
-            <h2>How to Experience the AR</h2>
-            <ul>
-                <li>Open Snapchat on your mobile device.</li>
-                <li>Scan the provided historical figure marker image.</li>
-                <li>Allow camera access when prompted.</li>
-                <li>Move your device to explore the AR scene from different angles.</li>
-                <li>Listen to narration and ambient jazz music as the historical moment unfolds.</li>
-                <li>Continue scanning additional markers to explore new time periods.</li>
-            </ul>
-        </section>
 
-        <footer>
-            © 2026 Layers of Ottawa | AR Experience Built in Lens Studio
-        </footer>
 
+    </p>
+    <p>
+        The goal of this project is to  make history more engaging by combining storytelling with immersive augmented reality technology, allowing users to experience Ottawa’s past in an interactive way.
+
+    </p>
+</section>
+
+<!-- USES -->
+<section>
+    <h2>Uses of the Website</h2>
+    <ul>
+        <li>Provides instructions for accessing the AR experience</li>
+        <li>Displays visuals such as the vision board and screenshots</li>
+        <li>Explains the concept of the project</li>
+        <li>Educates users about Ottawa’s history</li>
+        <li>Acts as a presentation tool for the project</li>
+    </ul>
+</section>
+
+<!-- HISTORY -->
+<section>
+    <h2>About Ottawa’s History</h2>
+    <p>
+        Ottawa’s history begins with Indigenous peoples, especially the 
+        Algonquin Anishinaabeg, who used the Ottawa River as a major trade route.
+    </p>
+    <p>
+        The city later grew through the construction of the Rideau Canal 
+        (1826–1832) and the lumber trade. In 1857, Queen Victoria selected 
+        Ottawa as the capital of Canada, transforming it into a political centre.
+    </p>
+</section>
+
+<!-- VISION BOARD -->
+<section>
+    <h2>Vision Board</h2>
+    <div class="vision-board">
+        <img src="image1.jpg" alt="Rideau Canal">
+        <img src="image2.jpg" alt="Parliament Hill">
+        <img src="image3.jpg" alt="Château Laurier">
+        <img src="image4.jpg" alt="Historic Ottawa">
     </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section>
+    <h2>Project Screenshots</h2>
+    <div class="vision-board">
+        <img src="site-home.png" alt="Website Homepage">
+        <img src="lens-studio.png" alt="Lens Studio">
+        <img src="ar-phone.png" alt="AR on Mobile">
+        <img src="vision-board.png" alt="Vision Board Section">
+    </div>
+</section>
+
+<!-- INSTRUCTIONS -->
+<section>
+    <h2>How to Experience the AR</h2>
+    <ul>
+        <li>Open Snapchat on your mobile device</li>
+        <li>Scan the marker image</li>
+        <li>Allow camera access</li>
+        <li>Move your phone to explore the AR gallery</li>
+        <li>Listen to audio and view animations</li>
+        <li>Scan more markers to explore new scenes</li>
+    </ul>
+</section>
+
+<footer>
+    © 2026 Layers of Ottawa | Created by the group
+</footer>
+
+</div>
 
 </body>
 </html>
